@@ -20,7 +20,7 @@ Render has earned a positive reputation for being an attractive option for devel
 
 In order to access Render you must have an account. To register you must access the following [link](https://dashboard.render.com/register). Once you have an account, you will have access to all the Render functionality:
 
-![render-functionalities](https://github.com/4GeeksAcademy/machine-learning-content/blob/master/assets/render-functionalities.PNG?raw=true)
+![render-functionalities](https://github.com/cvazquezlos/machine-learning-content/blob/master/assets/render-functionalities.PNG?raw=true)
 
 We can create database services, web deployment services, scheduled tasks...
 
@@ -32,7 +32,7 @@ The `decision_tree_classifier_default_42.sav` model has been saved in a `Pickle`
 
 #### Step 1: Create a Git repository
 
-To integrate something into Render we must first have created a Git repository. The Git we are going to generate in this lesson can be found [here](https://github.com/4GeeksAcademy/flask-render-integration), which is derived from 4Geeks' Machine Learning Template.
+To integrate something into Render we must first have created a Git repository. The Git we are going to generate in this lesson can be found [here](https://github.com/cvazquezlos/flask-render-integration), which is derived from 4Geeks' Machine Learning Template.
 
 #### Step 2: Create a basic application
 
@@ -51,17 +51,17 @@ The created file will serve as a minimal example of how to handle HTTP requests.
 
 Right now the repository looks like this:
 
-![flask-step1](https://github.com/4GeeksAcademy/machine-learning-content/blob/master/assets/flask-step1.png?raw=true)
+![flask-step1](https://github.com/cvazquezlos/machine-learning-content/blob/master/assets/flask-step1.png?raw=true)
 
 #### Step 3: Run the application
 
 To run the application locally we need the Python library `gunicorn`. We just need to install it, access with the console to the directory where the script is located and run `gunicorn app:app`.
 
-![flask-step2](https://github.com/4GeeksAcademy/machine-learning-content/blob/master/assets/flask-step2.png?raw=true)
+![flask-step2](https://github.com/cvazquezlos/machine-learning-content/blob/master/assets/flask-step2.png?raw=true)
 
 When finished, an address will be available through which we can access the web application:
 
-![flask-step21](https://github.com/4GeeksAcademy/machine-learning-content/blob/master/assets/flask-step21.png?raw=true)
+![flask-step21](https://github.com/cvazquezlos/machine-learning-content/blob/master/assets/flask-step21.png?raw=true)
 
 In this case, as we are developing it in a Codespace, the link is different from the one that would be generated locally, which would be `http://127.0.0.1:8000`.
 
@@ -139,15 +139,15 @@ Ultimately, the method returns the rendered HTML, in this case with the value of
 
 Right now the repository looks like this:
 
-![flask-step3](https://github.com/4GeeksAcademy/machine-learning-content/blob/master/assets/flask-step3.png?raw=true)
+![flask-step3](https://github.com/cvazquezlos/machine-learning-content/blob/master/assets/flask-step3.png?raw=true)
 
 If we save the changes and run the application again (`gunicorn app:app`), after navigating to our local web application we will see the following:
 
-![flask-step4](https://github.com/4GeeksAcademy/machine-learning-content/blob/master/assets/flask-step4.png?raw=true)
+![flask-step4](https://github.com/cvazquezlos/machine-learning-content/blob/master/assets/flask-step4.png?raw=true)
 
 After filling in the values and clicking on `Predict`, the result is also displayed in the interface itself:
 
-![flask-step5](https://github.com/4GeeksAcademy/machine-learning-content/blob/master/assets/flask-step5.png?raw=true)
+![flask-step5](https://github.com/cvazquezlos/machine-learning-content/blob/master/assets/flask-step5.png?raw=true)
 
 Entering any value predicts a class. Moreover, the effectiveness of the model is as observed in the past module.
 
@@ -262,11 +262,11 @@ When inserted into the HTML, the code would look like this:
 
 After re-running the application and accessing the web interface again, this is its new appearance:
 
-![flask-step6](https://github.com/4GeeksAcademy/machine-learning-content/blob/master/assets/flask-step6.png?raw=true)
+![flask-step6](https://github.com/cvazquezlos/machine-learning-content/blob/master/assets/flask-step6.png?raw=true)
 
 And again, when filling in the values and launching the prediction, this is how it is displayed on the front end:
 
-![flask-step7](https://github.com/4GeeksAcademy/machine-learning-content/blob/master/assets/flask-step7.png?raw=true)
+![flask-step7](https://github.com/cvazquezlos/machine-learning-content/blob/master/assets/flask-step7.png?raw=true)
 
 After developing the desired functionality and having a front end that meets our needs, we will integrate all this into Render.
 
@@ -276,7 +276,7 @@ The last step is to configure the service in Render and connect it to our Git re
 
 Once we select it, a form like the following one will appear:
 
-![flask-step8](https://github.com/4GeeksAcademy/machine-learning-content/blob/master/assets/flask-step8.png?raw=true)
+![flask-step8](https://github.com/cvazquezlos/machine-learning-content/blob/master/assets/flask-step8.png?raw=true)
 
 We will have to fill it with the following information:
 
@@ -289,17 +289,17 @@ We will have to fill it with the following information:
 
 Finally, we will choose the free rate. The form, once filled in, should have the following information:
 
-![flask-step9](https://github.com/4GeeksAcademy/machine-learning-content/blob/master/assets/flask-step9.png?raw=true)
+![flask-step9](https://github.com/cvazquezlos/machine-learning-content/blob/master/assets/flask-step9.png?raw=true)
 
 In the next step we will see a console with the logs of the application deployment. The deployment is done step by step, first cloning the repository, building it (*build*), installing the dependencies, and, finally, executing the command to launch the web application.
 
-![flask-step10](https://github.com/4GeeksAcademy/machine-learning-content/blob/master/assets/flask-step10.png?raw=true)
+![flask-step10](https://github.com/cvazquezlos/machine-learning-content/blob/master/assets/flask-step10.png?raw=true)
 
 ##### Resolve creation bug
 
 Because the Render environment is different from our development environment (especially in the Python version, since 3.7 is used by default and in this bootcamp we use 3.10 and up), we may get an error in the build of the project. In this case its resolution is very simple:
 
-![flask-step11](https://github.com/4GeeksAcademy/machine-learning-content/blob/master/assets/flask-step11.png?raw=true)
+![flask-step11](https://github.com/cvazquezlos/machine-learning-content/blob/master/assets/flask-step11.png?raw=true)
 
 We have to access, in the same screen where the execution log is opened, to the `Environment` section and enter a new environment variable. In this case we have the `3.11.4` version of Python but you could enter any other (as long as it is from 3.7).
 
@@ -309,16 +309,16 @@ We re-launch the deployment and now it should work.
 
 Once the deployment has been successful, this is the log that will be displayed:
 
-![flask-step12](https://github.com/4GeeksAcademy/machine-learning-content/blob/master/assets/flask-step12.png?raw=true)
+![flask-step12](https://github.com/cvazquezlos/machine-learning-content/blob/master/assets/flask-step12.png?raw=true)
 
 In fact, a section is available in which we can visualize the different deployments of our web application and the status of each one of them:
 
-![flask-step13](https://github.com/4GeeksAcademy/machine-learning-content/blob/master/assets/flask-step13.png?raw=true)
+![flask-step13](https://github.com/cvazquezlos/machine-learning-content/blob/master/assets/flask-step13.png?raw=true)
 
 #### Step 7: Using the service in Render
 
 Once the deployment has been successful, we access the application from the link just below the name of the service, and we can now use the application and share it with our friends/colleagues/clients. The one we have created in this lesson is accessible at the following link: `https://fourgeeks-flask-integration.onrender.com/`.
 
-![flask-step14](https://github.com/4GeeksAcademy/machine-learning-content/blob/master/assets/flask-step14.png?raw=true)
+![flask-step14](https://github.com/cvazquezlos/machine-learning-content/blob/master/assets/flask-step14.png?raw=true)
 
 > NOTE: As you have used the free plan, Render may throw the application away if it is not used. Depending on when you read this the application will be operational or not.
